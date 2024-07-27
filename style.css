@@ -1,0 +1,48 @@
+#banner{
+    background-color: #C7D2DE;
+    height:350px;                   
+
+}
+.top_row{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.top_buttons{
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    margin:8px;
+    
+}
+
+.top_buttons_style{
+    padding:10px;
+    margin:8px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    color:#233943;
+    border-color: #233943;
+    border-width: 3px;
+    
+}
+
+.trending_events{
+    margin-top: 50px;
+}
+.container_headings{
+    font-weight: bold;
+    font-size:40px;
+    margin:30px;
+}
+
+.search input{
+    padding:15px;
+    margin-right:70px;
+    width:300px;
+    height:15px;
+    font-size:20px;
+    border-radius: 30px;
+}
