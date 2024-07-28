@@ -6,7 +6,7 @@
 
 #banner{
     background-color: #C7D2DE;
-    height:350px;   
+    height:380px;   
     background-image: url('bg\ banner.jpg');
     background-repeat: no repeat;
     background-size:cover;
@@ -21,6 +21,7 @@
 .top_row img{
     height: 100px;
     width:150px;
+    align-content:flex-start
     
 }
 
@@ -38,9 +39,9 @@
     margin:8px;
     border-radius: 30px;
     font-size: 15px;
-    background-color: #C7D2DE; 
-    color:#032141;
-    border-color: #506c8a;
+    background-color:transparent; 
+    color:white;
+    border-color: white;
     border-width: 3px solid;
     
     
@@ -67,14 +68,44 @@
 .event{
     margin-top:30px;
     margin-left:30px;
+    margin-right:30px;
     height:350px;
     width:350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:30px;
+    font-size:15px;
+    font-weight:bold;
+    
+
+}
+.Event_heading{                       /*For styling event headings*/
+    font-size: 15px;
+    text-align: center;
+    color:rgb(75, 70, 70);
+    font-weight: bold;
 }
 .event img{
     height:60%;
     width:100%;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 30px;       
     border-top-right-radius: 30px;
+}
+.display_events{
+    margin-left:50px;
+    display:flex;
+    
+}
+#icons{                     /*For styling icons in the events*/
+    height:25px;
+    width:25px;
+    margin-top:5px;
+    margin-left: 5px;
+    margin-right:5px;
+
+}
+#icons_and_fonts{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
 }
