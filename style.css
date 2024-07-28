@@ -16,13 +16,16 @@
 .top_row{
     display:flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:start;
     width: 100%;
+    
 }
 .top_row > .leftSection > img{
-    height: 100px;
-    width:150px;
-    align-content:flex-start
+    height: 200px;
+    width:200px;
+    align-items: flex-start;
+    justify-items: left;
+    justify-content: left;
     
 }
 
