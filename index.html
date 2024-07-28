@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="banner"> <!--For that blue banner on the top-->
         <div class="top_row"> <!--This div is a container for the elements on top row-->
-            <img src="brand logo.jpg">
-           <div class="search"><input type="text" placeholder="Search"></div><!--For the search bar-->
-           <div class="top_buttons">  <!--This is a container for the buttons on top right-->
-        <button class="top_buttons_style">  <!--This is for styling the buttons in top right corner-->              
-            City
-        </button>
-        <button class="top_buttons_style">
-            List your Event
-        </button>
-        <button class="top_buttons_style">
-            Sign In
-        </button>
-        </div>
+            <div class="leftSection">
+                <img src="brand logo.jpg">
+            </div>
+            <div class="rightSection">
+                <input type="text" placeholder="Search" class="search"><!--For the search bar-->
+                <div class="top_buttons"> <!--This is a container for the buttons on top right-->
+                    <button class="top_buttons_style"> <!--This is for styling the buttons in top right corner-->
+                        City
+                    </button>
+                    <button class="top_buttons_style">
+                        List your Event
+                    </button>
+                    <button class="top_buttons_style">
+                        Sign In
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="trending_events"> <!--Container for Trending Events-->
@@ -29,23 +35,66 @@
                 <div class="Event_heading">Arijit Singh Live</div><!--For event headings-->
                 <div id="icons_and_fonts"><!--for displaying icons anf fonts together-->
                 <img id = "icons"src="location icon.png">   <!--For styling icons-->
-                <div>Aqua - The Park</div>
-                </div>        
+                <div class="location"><a href="https://www.google.com/maps/dir//MR+10+Rd,+Scheme+134,+Nipania,+Indore,+Madhya+Pradesh+452010/@22.7453367,75.8489092,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3962e3740c8b138b:0x1916ab8f453fe9b2!2m2!1d75.9313108!2d22.7453578?entry=ttu">Aqua - The Park</a></div>
+                </div>
+                <div id="icons_and_fonts"> 
+                    
+                    <img id="icons" src="date.png">
+                    <div class="location">Aug 4 | 8 PM</div>
+
+                </div>
+                <div id="cost_and_buttons"> <!--For indicating cost and payment button-->
+                    <p><b>&#x20B9 999 ONWARDS</b></p>
+                    <button>BUY NOW</button>
+                </div>
+                
+                        
             </div>
             <div class="event">
                 <img src="food carnival.jpg">
                 <div class="Event_heading">
                 Indorizayka Food Carnival
                 </div>
+                <div id="icons_and_fonts"><!--for displaying icons anf fonts together-->
+                    <img id = "icons"src="location icon.png">   <!--For styling icons-->
+                    <div class="location"><a href="https://www.google.com/maps/dir/LG+9+10,+Mitti+Caf%C3%A8+-+Organic.+Fresh.+Desi.,+CS+Naidu+Arcade,+Greater+Kailash+Road,+Greater+Kailash+hospital,+Opposite+Grotto,+New+Palasia,+Indore,+Madhya+Pradesh/Lasudia+Mori+Dewas+Naka,+near+Bhaskar+Academy,+Indore,+Madhya+Pradesh+452010/@22.7583789,75.8562409,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3962fd37c77c4cdf:0x4e662e38d451350b!2m2!1d75.8902449!2d22.7250498!1m5!1m1!1s0x39631d2c1e0637b5:0xe59f363b0348aceb!2m2!1d75.9058233!2d22.7904634?entry=ttu">Fagun Restaurant</a></div>
+                    </div>
+                    <div id="icons_and_fonts"> 
+                    
+                        <img id="icons" src="date.png">
+                        <div class="location">Aug 10-12 | 11 AM - 11 PM</div>
+    
+                    </div>
+                    <div id="cost_and_buttons"> <!--For indicating cost and payment button-->
+                        <p><b>&#x20B9 100 ONWARDS</b></p>
+                        <button>BUY NOW</button>
+                    </div>
             </div>
             <div class="event">
                 <img src="akash gupta.jpg">
                 <div class="Event_heading">
                 Standup Comedy | Aakash Gupta
                 </div>
+                <div id="icons_and_fonts"><!--for displaying icons anf fonts together-->
+                    <img id = "icons"src="location icon.png">   <!--For styling icons-->
+                    <div class="location"><a href="https://www.google.com/maps/dir//A.B.+Road,+Indore+Mega+City+Cir,+Indore,+Madhya+Pradesh+453331/@22.6269529,75.7226932,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3962fbe23e219b83:0x8c2b66fb503f64d8!2m2!1d75.8050948!2d22.6269739?entry=ttu">Papaya Tree Hotel</a></div>
+                    </div>
+                    <div id="icons_and_fonts"> 
+                        
+                        <img id="icons" src="date.png">
+                        <div class="location">Aug 18 | 7 PM</div>
+    
+                    </div>
+                    <div id="cost_and_buttons"> <!--For indicating cost and payment button-->
+                        <p><b>&#x20B9 699 ONWARDS</b></p>
+                        <button>BUY NOW</button>
+                    </div>
+            </div>
+                
             </div>
             
         </div>
-    </div>
+    
 </body>
+
 </html>
