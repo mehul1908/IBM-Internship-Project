@@ -22,8 +22,9 @@
     
 }
 .top_row > .leftSection > img{
-    height: 100px;
-    width:200px;
+    height: 90px;
+    width:210px;
+    
 }
 
 .top_row > .rightSection {
@@ -214,7 +215,7 @@ footer{
     /* height: 380px; */
     background-repeat: no repeat;
     background-size:cover;
-    margin-top: 20px;
+    margin-top: 60px;
     border-radius: 5px;
     color: white;
     padding: 0px 10px;
