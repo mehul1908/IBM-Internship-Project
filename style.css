@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
     font-family:Inter;
+
 }
 
 
@@ -10,7 +11,7 @@
     background-image: url('bg\ banner.jpg');
     background-repeat: no repeat;
     background-size:cover;
-               
+    border-radius: 5px;        
 
 }
 .top_row{
@@ -21,12 +22,8 @@
     
 }
 .top_row > .leftSection > img{
-    height: 200px;
+    height: 100px;
     width:200px;
-    align-items: flex-start;
-    justify-items: left;
-    justify-content: left;
-    
 }
 
 .top_row > .rightSection {
@@ -209,3 +206,47 @@
 #cost_and_buttons_auto p{
     margin-left:12px;
 }
+
+
+footer{
+    background-image: url("bg\ banner.jpg");
+    /* width: 100dvw; */
+    /* height: 380px; */
+    background-repeat: no repeat;
+    background-size:cover;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 10px;
+}
+
+.cmp_desc img{
+    height: 100px
+}
+
+.cmp_desc{
+    display: flex;
+}
+
+.cmp_desc div{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.upper_block{
+    display: flex;
+    justify-content: space-evenly;
+    text-align:start;
+}
+
+.upper_block li{
+    list-style-type: none;
+    margin-left: 0;
+    margin: 3px 0;
+}
+
+.upper_block h2{
+    text-decoration-line: underline;
+}
+
