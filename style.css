@@ -137,6 +137,9 @@
 
 #cost_and_buttons p{
     text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 #cost_and_buttons button{
     background-color: rgb(4, 80, 4);
@@ -154,6 +157,9 @@
 }
 #cost_and_buttons p{
     margin-left:12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 #cost_and_buttons_workshop{
     display:flex;
@@ -183,6 +189,9 @@
 }
 #cost_and_buttons_workshop p{
     margin-left:12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 #cost_and_buttons_auto{
     display:flex;
@@ -212,6 +221,9 @@
 }
 #cost_and_buttons_auto p{
     margin-left:12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 
 
