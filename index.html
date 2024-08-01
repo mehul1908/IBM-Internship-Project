@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2ebc32dbec.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,7 +23,7 @@
                     <button class="top_buttons_style"> <!--This is for styling the buttons in top right corner-->
                         City
                     </button>
-                    <button class="top_buttons_style">
+                    <button class="top_buttons_style" data-bs-toggle="modal" data-bs-target="#addAnEvent">
                         List your Event
                     </button>
                     <button class="top_buttons_style" data-bs-toggle="modal" data-bs-target="#signProcess">
@@ -28,6 +31,34 @@
                     </button>
                 </div>
             </div>
+        </div>
+
+        <div class="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./akash gupta.jpg" class="d-block w-100" alt="...">
+                    <img src="./auto show.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./Arijit Concert.webp" class="d-block w-100" alt="...">
+                    <img src="./art workshop.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./copywriting workshop.jpg" class="d-block w-100" alt="...">
+                    <img src="./food carnival.jpg" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         </div>
     </nav>
     <div class="trending_events"> <!--Container for Trending Events-->
@@ -221,44 +252,96 @@
     </main>
 
     <div class="modal fade" id="signProcess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="signProcessLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content wrapper">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white; background-color : white"></button>
-                    <form action="">
-                        <h1>Login</h1>
-                        <div class="input-box">
-                            <input type="text" placeholder="Username" required>
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" required>
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <div class="remember-forgot">
-                            <label><input type="checkbox">Remember Me</label>
-                            <a href="#"> Forgot Password</a>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
+        aria-labelledby="signProcessLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content wrapper">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    style="color: white; background-color : white"></button>
+                <form action="">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#"> Forgot Password</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
 
-                        <div class="register-link">
-                            <p>Don't have an account? <a href="#">Register</a></p>
-                        </div>
-                    </form>
-                </div>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="addAnEvent" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="signProcessLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content wrapper">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    style="color: white; background-color : white"></button>
+                <h1>List An Event</h1>
+                <form action="#">
+                    <div class="input-box">
+                        <label for="event-name">Event Name</label>
+                        <input type="text" id="event-name" name="event-name" placeholder="Enter the event name"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-date">Date</label>
+                        <input type="date" id="event-date" name="event-date" placeholder="Enter the Date of Event"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-time">Time</label>
+                        <input type="time" id="event-time" name="event-time" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-location">Location</label>
+                        <input type="text" id="event-location" name="event-location" placeholder="Enter event location"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="event-description">Description</label>
+                        
+                            <input type="text" id="event-description" name="event-description"
+                            placeholder="Enter Event Description" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="organizer-name">Organizer Name</label>
+                        <input type="text" id="organizer-name" name="organizer-name"
+                            placeholder="Enter organizer's name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="organizer-email">Organizer Email</label>
+                        <input type="email" id="organizer-email" name="organizer-email"
+                            placeholder="Enter organizer's email" required>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Event</button>
+                </form>
 
             </div>
+
         </div>
+    </div>
 
     <footer>
-        <!-- <section class="cmp_desc">
-            <img src="./brand_logo.png" alt="">
-            <div>
-                Welcome to Eventify, your go-to platform for seamless event management. From registration and
-                ticketing to collecting valuable feedback, we provide all the tools you need to ensure your event's
-                success.
-            </div>
-        </section> -->
+        
         <section class="upper_block">
             <section>
                 <ul>
@@ -296,11 +379,11 @@
             <section>
                 <ul>
                     <h2>Follow Us</h2>
-                    <li><i class="fa-brands fa-facebook"></i>     Facebook</li>
-                    <li> <i class="fa-brands fa-x-twitter"></i>     Twitter</li>
-                    <li><i class="fa-brands fa-linkedin-in"></i>    LinkedIn</li>
-                    <li><i class="fa-brands fa-instagram"></i>    Instagram</li>
-                    <li> <i class="fa-brands fa-threads"></i>      Thread</li>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                    <li> <i class="fa-brands fa-x-twitter"></i> Twitter</li>
+                    <li><i class="fa-brands fa-linkedin-in"></i> LinkedIn</li>
+                    <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li> <i class="fa-brands fa-threads"></i> Thread</li>
                 </ul>
             </section>
         </section>
